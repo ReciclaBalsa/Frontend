@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.logo {
+  width: max-content;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo i {
+  color: #24c189;
+}
+
+.logo-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+}
+
+.logo-title a {
+  color: #171717;
+}
+
+.logo-title a span {
+  color: #24c189;
+}
+
+.navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+}
+
+.link {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #198660;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link-cadastrar {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #171717;
+  padding: 5px 10px;
+  border: 1px solid #171717;
+  border-radius: 5px;
+  background-color: transparent;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.link-cadastrar:hover,
+.link-cadastrar:focus {
+  color: #fff;
+  transition: 0.5s ease-in-out;
+  box-shadow: inset 6.5em 0 0 0 #24c189;
+}
+
+footer {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 500;
+  width: 100%;
+  height: auto;
+  padding: 20px 100px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

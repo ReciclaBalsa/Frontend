@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.cabecalho {
+  width: 100%;
+  height: 75px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px 40px;
+  position: fixed;
+}
+.cabecalho span {
+  color: #24c189;
+}
+.cabecalho h1 {
+  color: #000;
+}
+.navegacao {
+  display: flex;
+  width: max-content;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.menu .link {
+  border: 2px solid #24c189;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  color: #000;
+}
+.menu .link:hover {
+  background-color: #24c189;
+  color: #fff;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  /* Ajustado de 500px para 50px */
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  text-align: center;
+}
+
+main h1 {
+  margin-bottom: 12px;
+  margin-top: 70px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.item {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 14px;
+}
+
+.item label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.item input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+input[type="password"],
+input[type="date"],
+input[type="number"],
+input[type="email"],
+input[type="text"] {
+  border: 2px solid #24c189;
+  border-radius: 5px;
+  height: 50px;
+  padding: 10px;
+}
+
+.acessar {
+  border: none;
+  background-color: #24c189;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  width: 400px;
+  height: 40px;
+  margin-top: 10px; /* Ajustado para mais espaço acima */
+  font-weight: 500;
+  font-size: medium;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.acessar:hover {
+  background-color: #18835b;
+  color: #fff;
+}
+footer {
+  position: relative;
+  bottom: 0;
+
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 500;
+  width: 100%;
+  height: 10vh;
+  padding: 1px 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
