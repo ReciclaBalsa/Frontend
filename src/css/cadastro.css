@@ -118,6 +118,7 @@ input[type="text"] {
   font-size: medium;
   cursor: pointer;
   transition: 0.3s ease;
+  font-family: "Poppins", sans-serif;
 }
 
 .acessar:hover {

@@ -1,144 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .cabecalho {
-    width: 100%;
-    height: 75px;
-    padding: 10px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
+  width: 100%;
+  height: 75px;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
 }
 
 .cabecalho span {
-    color: #24C189;
+  color: #24c189;
 }
 
 .cabecalho h1 {
-    color: #000;
+  color: #000;
 }
 
 .navegacao {
-    display: flex;
-    width: max-content;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  width: max-content;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu {
-    list-style: none;
-    display: flex;
-    gap: 10px;
+  list-style: none;
+  display: flex;
+  gap: 10px;
 }
 
 .menu .link {
-    border: 2px solid #24C189;
-    border-radius: 5px;
-    padding: 5px;
-    text-decoration: none;
-    color: #000;
+  border: 2px solid #24c189;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  color: #000;
 }
 
 .menu .link:hover {
-    background-color: #24C189;
-    color: #fff;
+  background-color: #24c189;
+  color: #fff;
 }
-.conteudo{
-    height: 350px;
-
+.conteudo {
+  height: 350px;
 }
 
 main {
-    font-family: "Poppins",sans-serif;
-    gap: 250px; /* Ajustado de 500px para 50px */
-    width: 100%;
-    height: calc(100vh - 75px);
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+  font-family: "Poppins", sans-serif;
+  gap: 250px; /* Ajustado de 500px para 50px */
+  width: 100%;
+  height: calc(100vh - 75px);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
-
-
-
 
 .inputs {
-    width: 400px; /* Ajustado de 300vh para 300px */
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px; /* Adicionado para espaçamento entre inputs */
-    color: black;
-    font-size: medium;
+  width: 400px; /* Ajustado de 300vh para 300px */
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Adicionado para espaçamento entre inputs */
+  color: black;
+  font-size: medium;
 }
 input[type="email"],
-input[type="password"]{
-    border: 2px solid #24C189 ;
-    border-radius: 5px;
-    height: 50px;
-    padding: 10px;
+input[type="password"] {
+  border: 2px solid #24c189;
+  border-radius: 5px;
+  height: 50px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
-
-.acessar{
-    border: 2px solid #24C189;
-    background-color: #24C189;
-    color: #fff;
-    border-radius: 5px;
-    padding: 5px;
-    text-decoration: none;;
-    width: 400px;
-    height: 40px;
-    margin-top: 10px; /* Ajustado para mais espaço acima */
-    font-weight: 500;
-    font-size: medium;
+.acessar {
+  border: none;
+  background-color: #24c189;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  width: 400px;
+  height: 40px;
+  margin-top: 10px; /* Ajustado para mais espaço acima */
+  font-weight: 500;
+  font-size: medium;
+  transition: 0.3s ease;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
 }
 
 .acessar:hover {
-    background-color:white ;
-    color: black;
-    
+  background-color: #18835b;
+  color: #fff;
 }
 
 .login img {
-    width: 450px;
+  width: 450px;
 }
 
 main h1 {
-    font-size: 30px;
+  font-size: 30px;
 }
-.suporte{
-    margin-top: 8px;
+.suporte {
+  margin-top: 8px;
 
-    font-size: 12px;
+  font-size: 12px;
 }
-.suporte a{
-    margin-left: 176px;
+.suporte a {
+  margin-left: 176px;
 }
-
-
 
 footer {
-    position: absolute;
-    font-family: "Open-Sans", sans-serif;
-    font-weight: 500;
-    width: 100%;
-    height: auto;
-    padding: 3px 100px;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  position: absolute;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 500;
+  width: 100%;
+  height: auto;
+  padding: 3px 100px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
