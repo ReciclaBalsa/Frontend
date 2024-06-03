@@ -14,9 +14,6 @@
           <li>
             <a href="../index.html" class="link link-home">Home</a>
           </li>
-          <li>
-            <a href="./cadastro.html" class="link link-sobrenos">Sobre nós</a>
-          </li>
         </ul>
       </nav>
     </header>
@@ -24,7 +21,7 @@
       <div class="login">
         <img src="../src/img/login.svg" alt="Ilustração de uma Balsa" />
       </div>
-      <div class="conteudo">
+      <form method="" class="conteudo">
         <div class="caixa">
           <h1>Acesse a Plataforma</h1>
           <div class="inputs">
@@ -35,6 +32,7 @@
               name="email"
               type="email"
               placeholder="Digite seu email..."
+              required
             />
             <label for="senha">Senha :</label>
             <input
@@ -43,6 +41,7 @@
               name="senha"
               type="password"
               placeholder="Digite sua senha..."
+              required
             />
           </div>
           <div class="suporte">
@@ -51,8 +50,8 @@
             <a href="#">Esqueci minha senha</a>
           </div>
         </div>
-        <button class="acessar">Continuar</button>
-      </div>
+        <button type="submit" class="acessar">Continuar</button>
+      </form>
     </main>
     <footer>
       <p>&copy; Copyright 2024 ReciclaBalsa. Todos os direitos reservados.</p>
