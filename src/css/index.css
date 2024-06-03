@@ -6,6 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -57,7 +58,6 @@ header {
   list-style: none;
   gap: 40px;
   align-items: center;
-  width: 100%;
 }
 
 .link {
@@ -89,6 +89,19 @@ header {
   box-shadow: inset 6.5em 0 0 0 #24c189;
 }
 
+.main-container {
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.about-section {
+}
+
 footer {
   font-family: "Open-Sans", sans-serif;
   font-weight: 500;
@@ -99,4 +112,5 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
 }
