@@ -3,6 +3,7 @@ const form = document.querySelector("form");
 const dialogIncorreto = document.querySelector("dialog");
 
 dialogIncorreto.close();
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const nome = document.querySelector("#nome").value;
@@ -11,8 +12,9 @@ form.addEventListener("submit", (event) => {
   const email = document.querySelector("#email").value;
   const senha = document.querySelector("#senha").value;
   const confirmacaoSenha = document.querySelector("#confirma-senha").value;
+
   if (confirmacaoSenha != senha) {
-    dialogIncorreto.show();
+    dialogIncorreto.showModal();
     return;
   }
   const usuario = {
@@ -24,7 +26,7 @@ form.addEventListener("submit", (event) => {
   };
 
   localStorage.setItem(email, JSON.stringify(usuario));
-  console.log(usuario);
+  localStorage.setItem("ultimoEmail", email);
   form.reset();
-  window.open("./cartao.html");
+  window.open("./cartao.html?email=" + encodeURIComponent(email));
 });

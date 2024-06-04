@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 75px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.logo {
+  width: max-content;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo i {
+  color: #24c189;
+}
+
+.logo-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+}
+
+.logo-title a {
+  color: #171717;
+}
+
+.logo-title a span {
+  color: #24c189;
+}
+
+.navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+}
+
+.link {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #198660;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.user-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 0 100px;
+}
+
+.user-content p {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #1717171e;
+}
+
+.user-content label {
+  width: 100%;
+  font-weight: bold;
+  text-align: left;
+}
+
+.cartao-area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cartao {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 55%;
+  border-radius: 9px;
+  box-shadow: 10px 10px 22px -10px rgba(0, 0, 0, 0.75);
+  background: #3f3d56 url("../img/img-bg-cartao.png") center/cover no-repeat;
+  padding: 20px;
+}
+.cartao h1 {
+  font-size: 30px;
+}
+.header-cartao {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.fa-wifi {
+  rotate: 90deg;
+  font-size: 22px;
+  display: flex;
+  justify-content: end;
+}
+
+.content-cartao {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.info-usuario {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.content-cartao p {
+  font-size: 20px;
+}

@@ -4,15 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./js/login.js" defer></script>
     <title>Login - ReciclaBalsa</title>
   </head>
   <body>
     <header class="cabecalho">
-      <h1>Recicla<span>Balsa</span></h1>
+      <div class="logo">
+        <a href="./index.html"><i class="fa-solid fa-ship fa-2xl"></i></a>
+        <h1 class="logo-title">
+          <a href="./index.html">Recicla<span>Balsa</span></a>
+        </h1>
+      </div>
       <nav class="navegacao">
         <ul class="menu">
           <li>
-            <a href="../index.html" class="link link-home">Home</a>
+            <a href="/index.html" class="link link-home">Home</a>
           </li>
         </ul>
       </nav>
@@ -25,7 +38,7 @@
         <div class="caixa">
           <h1>Acesse a Plataforma</h1>
           <div class="inputs">
-            <label for="email">Email :</label>
+            <label for="email">Email</label>
             <input
               class="input"
               id="email"
@@ -34,7 +47,7 @@
               placeholder="Digite seu email..."
               required
             />
-            <label for="senha">Senha :</label>
+            <label for="senha">Senha</label>
             <input
               class="input"
               id="senha"
@@ -44,14 +57,20 @@
               required
             />
           </div>
-          <div class="suporte">
-            <input type="checkbox" id="lembrar-me" name="lembrar-me" />
-            <label for="lembrar-me">Lembrar-me</label>
-            <a href="#">Esqueci minha senha</a>
-          </div>
         </div>
         <button type="submit" class="acessar">Continuar</button>
       </form>
+      <dialog class="alert-dialog">
+        <div class="dialog-content">
+          <div class="text-content">
+            <h1>Ooops!</h1>
+            <p class="tipo-erro"></p>
+          </div>
+          <div class="close-content">
+            <button class="close-button">Fechar</button>
+          </div>
+        </div>
+      </dialog>
     </main>
     <footer>
       <p>&copy; Copyright 2024 ReciclaBalsa. Todos os direitos reservados.</p>

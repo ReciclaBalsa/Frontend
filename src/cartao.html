@@ -4,9 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/cartao.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css "
+    />
+    <script src="./js/cartao.js" defer></script>
     <title>Cartão - Recicla Balsa</title>
   </head>
   <body>
-    <h1>Cartão</h1>
+    <header class="cabecalho">
+      <div class="logo">
+        <a href="./index.html"><i class="fa-solid fa-ship fa-2xl"></i></a>
+        <h1 class="logo-title">
+          <a href="./index.html">Recicla<span>Balsa</span></a>
+        </h1>
+      </div>
+      <nav class="navegacao">
+        <ul class="menu">
+          <li>
+            <a href="/index.html" class="link link-home">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="user-content">
+        <h1>Seus Dados</h1>
+        <label>Nome</label>
+        <p class="nome"></p>
+        <label>CPF</label>
+        <p class="cpf"></p>
+        <label>Email</label>
+        <p class="email"></p>
+        <label>Data de Nascimento (YY-MM-DD)</label>
+        <p class="data-nasc"></p>
+      </div>
+
+      <aside class="cartao-area">
+        <div class="cartao">
+          <div class="header-cartao">
+            <h1>ReciclaBalsa</h1>
+            <i class="fa-solid fa-wifi fa-2xl"></i>
+          </div>
+          <div class="content-cartao">
+            <div class="info-usuario">
+              <div class="dados">
+                <p class="nome-cartao"></p>
+                <p class="cpf-cartao"></p>
+              </div>
+              <i class="fa-solid fa-ship fa-2xl"></i>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
   </body>
 </html>
