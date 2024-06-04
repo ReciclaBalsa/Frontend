@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,500;0,700;1,500;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -70,12 +69,28 @@ header {
   text-decoration: underline;
 }
 
+.navegacao i {
+  cursor: pointer;
+  display: none;
+}
+
 main {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 75px);
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+
+.main-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row-reverse;
+  gap: 40px;
+  padding: 20px;
 }
 
 .user-content {
@@ -84,8 +99,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  padding: 0 100px;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 80px 0 0;
 }
 
 .user-content p {
@@ -113,11 +129,11 @@ main {
 .cartao {
   display: flex;
   flex-direction: column;
-  width: 75%;
-  height: 55%;
-  border-radius: 9px;
+  width: 410px;
+  height: 240px;
+  border-radius: 18px;
   box-shadow: 10px 10px 22px -10px rgba(0, 0, 0, 0.75);
-  background: #3f3d56 url("../img/img-bg-cartao.png") center/cover no-repeat;
+  background: url("../img/img-bg-cartao.png") center/cover no-repeat;
   padding: 20px;
 }
 .cartao h1 {
@@ -158,4 +174,81 @@ main {
 
 .content-cartao p {
   font-size: 20px;
+}
+
+@media screen and (width < 1024px) {
+  header {
+    padding: 0 40px;
+  }
+  .user-content {
+    padding: 0 20px 0 0;
+  }
+}
+
+@media screen and (width < 768px) {
+  header {
+    padding: 0 30px;
+  }
+  .logo-title {
+    font-size: 32px;
+  }
+
+  main {
+    height: auto;
+  }
+  .main-content {
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+
+  .user-content {
+    width: 410px;
+    padding: 0;
+  }
+
+  .navegacao .fa-bars {
+    display: block;
+    z-index: 1;
+    color: #24c189;
+    position: relative;
+  }
+
+  .menu {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    transition: 0.3s ease;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0;
+  }
+
+  .menu.active {
+    top: 0;
+  }
+}
+
+@media screen and (width < 456px) {
+  header {
+    padding: 20px;
+  }
+  .logo .icon {
+    display: none;
+  }
+  .logo-title {
+    font-size: 28px;
+  }
+  .cartao {
+    width: 100%;
+    height: 210px;
+  }
+  .user-content {
+    width: 100%;
+  }
+  .info-usuario p {
+    font-size: 16px;
+  }
 }

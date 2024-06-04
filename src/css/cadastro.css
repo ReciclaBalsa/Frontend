@@ -1,13 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,500;0,700;1,500;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
-}
-body {
   font-family: "Poppins", sans-serif;
 }
 header {
@@ -34,7 +31,6 @@ header {
 }
 
 .logo-title {
-  font-family: "Poppins", sans-serif;
   font-size: 42px;
 }
 
@@ -62,7 +58,6 @@ header {
 }
 
 .link {
-  font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: #198660;
 }
@@ -71,91 +66,164 @@ header {
   text-decoration: underline;
 }
 
+.navegacao .fa-bars {
+  display: none;
+}
+
 main {
-  font-family: "Poppins", sans-serif;
-  /* Ajustado de 500px para 50px */
-  width: 100%;
-  height: auto;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  display: grid;
+  width: 100%;
+  height: auto;
+  padding: 20px 100px;
   text-align: center;
 }
 
-main h1 {
-  margin-bottom: 12px;
-  font-size: 30px;
-  text-align: center;
+.form-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
 }
 
-.item {
-  background-color: #fff;
-  padding: 5px;
-  border-radius: 5px;
+.form-content {
+  width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  font-size: 14px;
+  text-align: left;
+  gap: 5px;
 }
 
-.item label {
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #333;
-}
-
-.item input {
+.input {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-}
-
-input[type="password"],
-input[type="date"],
-input[type="number"],
-input[type="email"],
-input[type="text"] {
   border: 2px solid #24c189;
   border-radius: 5px;
   height: 50px;
   padding: 10px;
+  font-size: 90%;
 }
 
-.acessar {
+.btn-cadastro {
   border: none;
   background-color: #24c189;
   color: #fff;
   border-radius: 5px;
   padding: 5px;
   text-decoration: none;
-  width: 400px;
-  height: 40px;
+  width: 100%;
   margin-top: 10px; /* Ajustado para mais espaço acima */
   font-weight: 500;
   font-size: medium;
   cursor: pointer;
   transition: 0.3s ease;
-  font-family: "Poppins", sans-serif;
 }
 
-.acessar:hover {
+.btn-cadastro:hover {
   background-color: #18835b;
   color: #fff;
 }
-footer {
-  position: relative;
-  bottom: 0;
 
-  font-family: "Open-Sans", sans-serif;
-  font-weight: 500;
+.dialog-incorreto {
+  position: absolute;
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  border: none;
+  border-radius: 5px;
+  margin: 50vh auto;
+  background-color: #fff;
+  box-shadow: 10px 10px 44px -8px;
+}
+
+.dialog-content {
   width: 100%;
-  height: 10vh;
-  padding: 1px 1px;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+}
+
+.dialog-content .close-content {
+  width: 100%;
+}
+
+.dialog-incorreto .close-button {
+  cursor: pointer;
+  border: none;
+  width: 50%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #ff3737;
+  color: #fff;
+}
+
+.close-button:hover {
+  background-color: #b82020;
+}
+
+.dialog-incorreto::backdrop {
+  background: rgba(0, 0, 0, 0.329);
+}
+
+@media screen and (width < 768px) {
+  .logo-title {
+    font-size: 32px;
+  }
+  main {
+    padding: 20px 40px;
+  }
+}
+
+@media screen and (width < 576px) {
+  header {
+    padding: 0 20px;
+  }
+  main {
+    padding: 20px 0;
+  }
+
+  .logo {
+    flex-direction: row-reverse;
+  }
+  .logo .fa-ship {
+    display: none;
+  }
+  .navegacao .fa-bars {
+    display: block;
+    z-index: 1;
+    color: #24c189;
+    position: relative;
+  }
+
+  .menu {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    transition: 0.3s ease;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0;
+  }
+
+  .menu.active {
+    top: 0;
+  }
+  .form-container {
+    padding: 0 20px;
+  }
+
+  .form-content {
+    width: 100%;
+  }
 }

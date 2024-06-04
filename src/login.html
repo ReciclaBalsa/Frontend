@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <script src="./js/login.js" defer></script>
+    <script src="./js/menu.js" defer></script>
     <title>Login - ReciclaBalsa</title>
   </head>
   <body>
@@ -28,14 +29,15 @@
             <a href="/index.html" class="link link-home">Home</a>
           </li>
         </ul>
+        <i class="fa-solid fa-bars fa-2xl"></i>
       </nav>
     </header>
-    <main class="pagina">
-      <div class="login">
-        <img src="../src/img/login.svg" alt="Ilustração de uma Balsa" />
+    <main>
+      <div class="image-area">
+        <img src="./img/login.svg" alt="Ilustração de uma Balsa" />
       </div>
-      <form method="" class="conteudo">
-        <div class="caixa">
+      <div class="form-container">
+        <form class="form-content">
           <h1>Acesse a Plataforma</h1>
           <div class="inputs">
             <label for="email">Email</label>
@@ -57,9 +59,9 @@
               required
             />
           </div>
-        </div>
-        <button type="submit" class="acessar">Continuar</button>
-      </form>
+          <button type="submit" class="btn-login">Continuar</button>
+        </form>
+      </div>
       <dialog class="alert-dialog">
         <div class="dialog-content">
           <div class="text-content">
@@ -72,8 +74,5 @@
         </div>
       </dialog>
     </main>
-    <footer>
-      <p>&copy; Copyright 2024 ReciclaBalsa. Todos os direitos reservados.</p>
-    </footer>
   </body>
 </html>
