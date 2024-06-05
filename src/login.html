@@ -1,82 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/login.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="./js/login.js" defer></script>
-    <script src="./js/menu.js" defer></script>
-    <title>Login - ReciclaBalsa</title>
-  </head>
-  <body>
-    <header class="cabecalho">
-      <div class="logo">
-        <a href="./index.html"><i class="fa-solid fa-ship fa-2xl"></i></a>
-        <h1 class="logo-title">
-          <a href="./index.html">Recicla<span>Balsa</span></a>
-        </h1>
-      </div>
-      <nav class="navegacao">
-        <ul class="menu">
-          <li>
-            <a href="/index.html" class="link link-home">Home</a>
-          </li>
-        </ul>
-        <i class="fa-solid fa-bars fa-2xl"></i>
-      </nav>
-    </header>
-    <main>
-      <div class="image-area">
-        <img src="./img/login.svg" alt="Ilustração de uma Balsa" />
-      </div>
-      <div class="form-container">
-        <form class="form-content">
-          <h1>Acesse a Plataforma</h1>
-          <div class="inputs">
-            <label for="email">Email</label>
-            <input
-              class="input"
-              id="email"
-              name="email"
-              type="email"
-              placeholder="Digite seu email..."
-              required
-            />
-            <label for="senha">Senha</label>
-            <input
-              class="input"
-              id="senha"
-              name="senha"
-              type="password"
-              placeholder="Digite sua senha..."
-              required
-            />
-          </div>
-          <button type="submit" class="btn-login">Continuar</button>
-          <p>
-            Ainda não é cadastrado? Cadastre-se
-            <a href="./cadastro.html">Aqui!</a>
-          </p>
-        </form>
-      </div>
-      <dialog class="alert-dialog">
-        <div class="dialog-content">
-          <div class="text-content">
-            <h1>Ooops!</h1>
-            <p class="tipo-erro"></p>
-          </div>
-          <div class="close-content">
-            <button class="close-button">Fechar</button>
-          </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="./js/login.js" defer></script>
+  <script src="./js/menu.js" defer></script>
+  <title>Login - ReciclaBalsa</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="logo">
+      <a href="./index.html" aria-label="Página Inicial"><i class="fa-solid fa-ship fa-2xl" aria-hidden="true"></i></a>
+      <h1 class="logo-title">
+        <a href="./index.html" aria-label="Página Inicial">Recicla<span>Balsa</span></a>
+      </h1>
+    </div>
+    <nav class="navegacao">
+      <ul class="menu">
+        <li>
+          <a href="/index.html" class="link link-home" aria-label="Home">Home</a>
+        </li>
+      </ul>
+      <button class="menu-toggle" aria-label="Abrir menu">
+        <i class="fa-solid fa-bars fa-2xl" aria-hidden="true"></i>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <div class="image-area">
+      <img src="./img/login.svg" alt="Ilustração de uma Balsa">
+    </div>
+    <div class="form-container">
+      <form class="form-content" aria-labelledby="form-title">
+        <h1 id="form-title">Acesse a Plataforma</h1>
+        <div class="inputs">
+          <label for="email">Email</label>
+          <input class="input" id="email" name="email" type="email" placeholder="Digite seu email..." required
+            aria-required="true">
+          <label for="senha">Senha</label>
+          <input class="input" id="senha" name="senha" type="password" placeholder="Digite sua senha..." required
+            aria-required="true">
         </div>
-      </dialog>
-    </main>
-  </body>
+        <button type="submit" class="btn-login" aria-label="Continuar">
+          Continuar
+        </button>
+        <p>
+          Ainda não é cadastrado? Cadastre-se
+          <a href="./cadastro.html" aria-label="Página de cadastro">Aqui!</a>
+        </p>
+      </form>
+    </div>
+    <dialog class="alert-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-content">
+        <div class="text-content">
+          <h1 id="dialog-title">Ooops!</h1>
+          <p class="tipo-erro"></p>
+        </div>
+        <div class="close-content">
+          <button class="close-button" aria-label="Fechar">Fechar</button>
+        </div>
+      </div>
+    </dialog>
+  </main>
+</body>
+
 </html>

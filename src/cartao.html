@@ -1,70 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/cartao.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css "
-    />
-    <script src="./js/cartao.js" defer></script>
-    <script src="./js/menu.js" defer></script>
-    <script src="./js/chatbot.js"></script>
-    <title>Cartão - Recicla Balsa</title>
-  </head>
 
-  <body>
-    <header class="cabecalho">
-      <div class="logo">
-        <a href="./index.html" class="icon">
-          <i class="fa-solid fa-ship fa-2xl"></i>
-        </a>
-        <h1 class="logo-title">
-          <a href="./index.html">Recicla<span>Balsa</span></a>
-        </h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/cartao.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="./js/cartao.js" defer></script>
+  <script src="./js/menu.js" defer></script>
+  <script src="./js/chatbot.js"></script>
+  <title>Cartão - Recicla Balsa</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="logo">
+      <a href="./index.html" class="icon" aria-label="Página Inicial">
+        <i class="fa-solid fa-ship fa-2xl" aria-hidden="true"></i>
+      </a>
+      <h1 class="logo-title">
+        <a href="./index.html" aria-label="Página Inicial">Recicla<span>Balsa</span></a>
+      </h1>
+    </div>
+    <nav class="navegacao" aria-label="Menu Principal">
+      <ul class="menu">
+        <li>
+          <a href="/index.html" class="link link-home" aria-label="Home">Home</a>
+        </li>
+      </ul>
+      <button class="menu-toggle" aria-label="Abrir menu">
+        <i class="fa-solid fa-bars fa-2xl" aria-hidden="true"></i>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <h1 id="user-data-heading">Seus Dados</h1>
+    <div class="main-content" aria-labelledby="user-data-heading">
+      <div class="user-content">
+        <span>Nome</span>
+        <p class="nome"></p>
+        <span>CPF</span>
+        <p class="cpf"></p>
+        <span>Email</span>
+        <p class="email"></p>
+        <span>Data de Nascimento</span>
+        <p class="data-nasc"></p>
       </div>
-      <nav class="navegacao">
-        <ul class="menu">
-          <li>
-            <a href="/index.html" class="link link-home">Home</a>
-          </li>
-        </ul>
-        <i class="fa-solid fa-bars fa-2xl"></i>
-      </nav>
-    </header>
-    <main>
-      <h1>Seus Dados</h1>
-      <div class="main-content">
-        <div class="user-content">
-          <label>Nome</label>
-          <p class="nome"></p>
-          <label>CPF</label>
-          <p class="cpf"></p>
-          <label>Email</label>
-          <p class="email"></p>
-          <label>Data de Nascimento</label>
-          <p class="data-nasc"></p>
-        </div>
 
-        <aside class="cartao-area">
-          <div class="cartao">
-            <div class="header-cartao">
-              <h2>ReciclaBalsa</h2>
-              <i class="fa-solid fa-wifi fa-2xl"></i>
-            </div>
-            <div class="content-cartao">
-              <div class="info-usuario">
-                <div class="dados">
-                  <p class="nome-cartao"></p>
-                  <p class="cpf-cartao"></p>
-                </div>
-                <i class="fa-solid fa-ship fa-2xl"></i>
+      <aside class="cartao-area" aria-labelledby="cartao-heading">
+        <h2 id="cartao-heading">Seu Cartão</h2>
+        <div class="cartao">
+          <div class="header-cartao">
+            <h2>ReciclaBalsa</h2>
+            <i class="fa-solid fa-wifi fa-2xl" aria-hidden="true"></i>
+          </div>
+          <div class="content-cartao">
+            <div class="info-usuario">
+              <div class="dados">
+                <p class="nome-cartao"></p>
+                <p class="cpf-cartao"></p>
               </div>
+              <i class="fa-solid fa-ship fa-2xl" aria-hidden="true"></i>
             </div>
           </div>
-        </aside>
-      </div>
-    </main>
-  </body>
+        </div>
+      </aside>
+    </div>
+  </main>
+</body>
+
 </html>
