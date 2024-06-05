@@ -32,12 +32,11 @@ header {
 }
 
 .logo-title {
-  font-family: "Poppins", sans-serif;
-  font-size: 42px;
+  font-size: 36px;
 }
 
 .logo-title a {
-  color: #171717;
+  color: #3f3f3f;
 }
 
 .logo-title a span {
@@ -60,7 +59,6 @@ header {
 }
 
 .link {
-  font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: #198660;
 }

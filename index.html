@@ -18,12 +18,29 @@
     <header>
       <nav class="navbar" aria-label="Navegação principal">
         <div class="logo">
-          <a href="./index.html"><i class="fa-solid fa-ship fa-2xl"></i></a>
+          <a href="#home"><i class="fa-solid fa-ship fa-2xl"></i></a>
           <h1 class="logo-title">
-            <a href="./index.html">Recicla<span>Balsa</span></a>
+            <a href="#home">Recicla<span>Balsa</span></a>
           </h1>
         </div>
+
         <ul class="menu" role="menubar">
+          <li class="menu-item" role="none">
+            <a href="#home" class="link link-home" role="menuitem">Home</a>
+          </li>
+          <li class="menu-item" role="none">
+            <a href="#about" class="link link-about" role="menuitem">Sobre</a>
+          </li>
+          <li class="menu-item" role="none">
+            <a href="#integrantes" class="link link-integrantes" role="menuitem"
+              >Integrantes</a
+            >
+          </li>
+          <li class="menu-item" role="none">
+            <a href="#contact" class="link link-home" role="menuitem"
+              >Contato</a
+            >
+          </li>
           <li class="menu-item" role="none">
             <a href="./src/login.html" class="link link-login" role="menuitem"
               >Log In</a
@@ -42,7 +59,7 @@
       </nav>
     </header>
 
-    <main class="main-container">
+    <main class="main-container" id="home">
       <div class="text-content">
         <h2 class="main-title">
           Conectando comunidades através da reciclagem e transporte consciente.
@@ -59,7 +76,7 @@
         />
       </div>
     </main>
-    <section class="about-section">
+    <section class="about-section" id="about">
       <div class="text-content">
         <h2>Um pouco sobre nós...</h2>
         <p>
@@ -76,8 +93,138 @@
         />
       </div>
     </section>
-    <section class="integrantes-section">
+    <section class="integrantes-section" id="integrantes">
       <h2>Nossa equipe</h2>
+      <div class="team-container">
+        <div class="card card-1" role="article">
+          <div class="img-container">
+            <img
+              src="./src/img/img-foto-davi.jpg"
+              alt="Foto de Davi Gonzaga, integrante da equipe"
+            />
+          </div>
+          <h3>Davi Gonzaga</h3>
+          <p>werdavid1@gmail.com</p>
+          <p>RM554890</p>
+          <p>1TDSPF</p>
+          <div class="links-container">
+            <a
+              href="https://github.com/davignz"
+              class="github-icon"
+              target="_blank"
+              aria-label="Perfil do Github de Davi Gonzaga"
+            >
+              <i class="fa-brands fa-github fa-2xl"></i>
+            </a>
+            <a
+              class="linkedin-icon"
+              href="https://www.linkedin.com/in/davignz/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin fa-2xl"></i>
+            </a>
+          </div>
+        </div>
+        <div class="card card-2" role="article">
+          <div class="img-container">
+            <img
+              src="./src/img/img-foto-paulo.jpg"
+              alt="Foto de Paulo Henrique, integrante da equipe"
+            />
+          </div>
+          <h3>Paulo Henrique</h3>
+          <p>paulo.golova@gmail.com</p>
+          <p>RM555300</p>
+          <p>1TDSPF</p>
+          <div class="links-container">
+            <a
+              href="https://github.com/PauloHenrique63"
+              class="github-icon"
+              target="_blank"
+              aria-label="Perfil do Github de Paulo Henrique"
+            >
+              <i class="fa-brands fa-github fa-2xl"></i>
+            </a>
+            <a
+              class="linkedin-icon"
+              href="https://www.linkedin.com/in/ph-golovanevsky/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin fa-2xl"></i>
+            </a>
+          </div>
+        </div>
+        <div class="card card-3" role="article">
+          <div class="img-container">
+            <img
+              src="./src/img/img-foto-jennifer.jpg"
+              alt="Foto de Jennifer Daleffi, integrante da equipe"
+            />
+          </div>
+          <h3>Jennifer Daleffi</h3>
+          <p>jenniferdaleffii@gmail.com</p>
+          <p>RM557137</p>
+          <p>1TDSPF</p>
+          <div class="links-container">
+            <a
+              href="https://github.com/JenniferDaleffi"
+              class="github-icon"
+              target="_blank"
+              aria-label="Perfil do Github de Jennifer Daleffi"
+            >
+              <i class="fa-brands fa-github fa-2xl"></i>
+            </a>
+            <a
+              class="linkedin-icon"
+              href="https://www.linkedin.com/in/jennifer-daleffi-3094572b6/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin fa-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="content">
+          <h2>Entre em contato!</h2>
+          <img src="./src/img/img-contact.svg" alt="" />
+        </div>
+        <form
+          class="contact-form"
+          action="https://formsubmit.co/werdavid1@gmail.com"
+          method="POST"
+        >
+          <div class="container-form">
+            <div class="inputs">
+              <input
+                type="text"
+                name="user-name"
+                class="input"
+                placeholder="Digite seu nome..."
+                required
+              />
+              <input
+                type="email"
+                name="user-email"
+                class="input"
+                placeholder="Digite seu email..."
+                required
+              />
+              <textarea
+                name="user-comment"
+                class="user-comment"
+                placeholder="Mensagem..."
+                required
+              ></textarea>
+              <div class="btn-form">
+                <button type="submit" class="btn-submit">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </section>
 
     <footer>

@@ -31,11 +31,11 @@ header {
 }
 
 .logo-title {
-  font-size: 42px;
+  font-size: 36px;
 }
 
 .logo-title a {
-  color: #171717;
+  color: #3f3f3f;
 }
 
 .logo-title a span {
@@ -79,6 +79,10 @@ main {
   height: auto;
   padding: 20px 100px;
   text-align: center;
+}
+
+main h1 {
+  color: #3f3f3f;
 }
 
 .form-container {
