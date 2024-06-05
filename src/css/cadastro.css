@@ -15,6 +15,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 100px;
+  position: fixed;
+  z-index: 2;
 }
 
 .logo {
@@ -77,7 +79,7 @@ main {
   justify-content: center;
   width: 100%;
   height: auto;
-  padding: 20px 100px;
+  padding: 85px 100px 20px 100px;
   text-align: center;
 }
 
@@ -182,7 +184,7 @@ main h1 {
     font-size: 32px;
   }
   main {
-    padding: 20px 40px;
+    padding: 85px 40px 20px 40px;
   }
 }
 
@@ -191,7 +193,7 @@ main h1 {
     padding: 0 20px;
   }
   main {
-    padding: 20px 0;
+    padding: 85px 20px 20px 20px;
   }
 
   .logo {
@@ -202,14 +204,20 @@ main h1 {
   }
   .navegacao .fa-bars {
     display: block;
-    z-index: 1;
+    z-index: 999;
     color: #24c189;
     position: relative;
   }
 
+  .navegacao .fa-xmark {
+    display: block;
+    z-index: 1;
+    color: #24c189;
+    position: relative;
+  }
   .menu {
     position: absolute;
-    top: -100%;
+    top: -35rem;
     left: 0;
     width: 100vw;
     height: 100vh;

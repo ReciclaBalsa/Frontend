@@ -95,6 +95,11 @@ main {
   width: 100%;
   height: max-content;
 }
+
+.form-content p {
+  margin-top: 10px;
+  text-align: center;
+}
 .form-content h1 {
   color: #3f3f3f;
 }
@@ -230,6 +235,12 @@ main {
     position: relative;
   }
 
+  .navegacao .fa-xmark {
+    display: block;
+    z-index: 1;
+    color: #24c189;
+    position: relative;
+  }
   .menu {
     position: absolute;
     top: -100%;

@@ -16,6 +16,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 100px;
+  position: fixed;
 }
 
 .logo {
@@ -74,10 +75,11 @@ header {
 
 main {
   width: 100%;
-  height: calc(100vh - 75px);
+  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 85px 0 10px 0;
 }
 
 .main-content {
@@ -181,6 +183,9 @@ main {
   .user-content {
     padding: 0 20px 0 0;
   }
+  main {
+    padding: 85px 40px 10px 40px;
+  }
 }
 
 @media screen and (width < 768px) {
@@ -193,6 +198,7 @@ main {
 
   main {
     height: auto;
+    padding-bottom: 10px;
   }
   .main-content {
     flex-direction: column-reverse;
@@ -211,9 +217,16 @@ main {
     position: relative;
   }
 
+  .navegacao .fa-xmark {
+    display: block;
+    z-index: 1;
+    color: #24c189;
+    position: relative;
+  }
+
   .menu {
     position: absolute;
-    top: -100%;
+    top: -35rem;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -230,6 +243,9 @@ main {
 }
 
 @media screen and (width < 456px) {
+  main {
+    padding: 85px 0 10px 0;
+  }
   header {
     padding: 20px;
   }
